@@ -27,10 +27,12 @@ if __name__ == '__main__':
     app = tornado.web.Application(
         handlers=[
             (r'/', IndexHandler),
-            (r'/about',AboutHandler),
-            (r'/home',HomeHandler),
-            (r'work',WorkHandler),
-            (r'contact',ContactHandler),
+            (r'/about', AboutHandler),
+            (r'/home', HomeHandler),
+            (r'/work', WorkHandler),
+            (r'/contact', ContactHandler),
+
+
         ],
         template_path=os.path.join(os.path.dirname(__file__), "templates"),
         static_path=os.path.join(os.path.dirname(__file__), "static"),
